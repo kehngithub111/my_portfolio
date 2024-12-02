@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            color: #262626;
+            box-sizing: border-box;
+        }
+
+        .text-shadow {
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        body, html {
+            overflow-x: hidden;
+        }
+    </style>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-200">
+    <header id="header" class="fixed w-full h-[4.5rem] z-[999] px-1 bg-gray-900">
+        <div class="max-w-[1300px] w-full mx-auto h-full flex items-center justify-between">
+            <button id="button">
+                <h1 class="text-3xl font-extrabold text-gray-200 text-shadow max-[500px]:text-2xl">CodeKehn</h1>
+            </button>
+
+            <div class="flex gap-6 max-[500px]:gap-3">
+                <button class="text-gray-200 max-[500px]:text-sm" id="button">About Me</button>
+                <button class="text-gray-200 max-[500px]:text-sm" id="button">Projects</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="bannerview" class="min-h-[95vh] flex bg-gray-900 pt-[4.5rem] px-1">
+        <div class="max-w-[1500px] w-full mx-auto flex flex-col items-center justify-center text-gray-200 relative"
+            data-aos="fade-down">
+            <div class="text-xl text-gray-300 flex items-center gap-2 justify-center max-[500px]:text-sm max-[500px]:flex-col">
+                <span class="text-gray-300 italic">Welcome! an aspiring</span>
+                <span class="text-blue-500 italic tracking-wide text-xl">Full Stack Developer</span>
+            </div>
+            <div class="relative">
+                <img class="absolute -top-[50px] left-[10%] animate-bounce  max-[768px]:left-[5%] max-[612px]:-top-[100px]" src="./images/laravel.svg" alt="">
+                <h1 class="text-7xl text-center text-gray-200 font-extrabold text-shadow mt-3 max-[768px]:text-5xl max-[500px]:text-4xl">I am Kehn Justine J.
+                    Benliro</h1>
+                <img class="absolute -top-[50px] right-[10%] animate-spin delay-1000 max-[768px]:right-[5%] max-[612px]:top-[200px]" src="./images/react.svg" alt="">
+            </div>
+            <p class="mt-3 text-gray-200 text-xl max-[768px]:text-[17px] max-[500px]:text-[15px]">Code Without Boundaries: Frontend to Backend</p>
+            <button class="bg-blue-600 max-w-[200px] w-full mt-5 h-[40px] rounded-md">Hire Me</button>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="aboutview" class="min-h-[95vh] pt-[10rem] px-1 max-[768px]:pt-[4.5rem]">
+        <div class="max-w-[1300px] py-3 w-full mx-auto grid grid-cols-2 gap-2 max-[768px]:grid-cols-1">
+            <div class="p-5 rounded-lg bg-gray-100 shadow-md relative w-full" data-aos="fade-right">
+                <img class="absolute -top-[30px] -right-2 size-[60px] animate-spin delay-1000" src="./images/react.svg"
+                    alt="">
+                <h1 class="text-4xl font-extrabold mb-5 max-[500px]:text-2xl">About Me</h1>
+                <p class="text-justify indent-20">Hi there! I'm Kehn Justine J. Benliro an aspiring full stack developer
+                    lives in the Philippines with
+                    a passion for creating comprehensive,
+                    end-to-end web applications. My goal is to bridge the gap between frontend user experiences and
+                    backend functionality, crafting seamless digital solutions that are both visually appealing and
+                    technically robust.
+                    I'm continuously learning and expanding my skill set across the entire web development stack. On the
+                    frontend, I'm honing my skills in modern JavaScript frameworks like React and Vue.js, while also
+                    mastering responsive design with HTML5 and CSS3. On the backend, I'm developing expertise in
+                    technologies such as laravel (PHP framework), and database mysql.
+                    My approach to development is driven by curiosity, problem-solving, and a commitment to writing
+                    clean, efficient code. I'm excited about the opportunity to transform innovative ideas into
+                    functional, user-friendly web applications that can make a real difference.</p>
+            </div>
+
+            <div class="p-5 rounded-lg bg-gray-100 shadow-md relative w-full flex flex-col justify-between"
+                data-aos="fade-left">
+                <img class="absolute -top-[30px] -right-4 size-[60px] animate-spin delay-1000" src="./images/react.svg"
+                    alt="">
+                <div>
+                    <h1 class="text-4xl font-extrabold mb-5">Tech Skills</h1>
+
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-col">
+                            <span>HTML</span>
+                            <div class="h-2 flex w-full border rounded-full">
+                                <span class="h-2 bg-orange-500 rounded-full w-[95%] relative">
+                                    <span class="text-[10px] absolute right-0 -top-4">95%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span>CSS <span class="text-sm">(Tailwind, Bootstrap, SCSS)</span></span>
+                            <div class="h-2 flex w-full border rounded-full">
+                                <span class="h-2 bg-blue-500 rounded-full w-[90%] relative">
+                                    <span class="text-[10px] absolute right-0 -top-4">90%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span>Javascript <span class="text-sm">(ReactJS)</span></span>
+                            <div class="h-2 flex w-full border rounded-full">
+                                <span class="h-2 bg-yellow-500 rounded-full w-[75%] relative">
+                                    <span class="text-[10px] absolute right-0 -top-4">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span>PHP <span class="text-sm">(Laravel)</span></span>
+                            <div class="h-2 flex w-full border rounded-full">
+                                <span class="h-2 bg-blue-400 rounded-full w-[60%] relative">
+                                    <span class="text-[10px] absolute right-0 -top-4">60%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center flex-col mt-5">
+                    <h1 class="text-lg text-center">"It does not matter how slowly you go as long as you do not stop." </h1>
+                    <span class="font-bold text-sm">- Confucius</span>
+                </div>
+            </div>
+
+            <div class="p-7 col-span-2 rounded-lg bg-gray-100 shadow-md relative w-full max-[768px]:col-span-1 max-[530px]:px-2" data-aos="fade-up">
+                <img class="absolute -bottom-[30px] -left-7 size-[60px] animate-spin delay-1000"
+                    src="./images/react.svg" alt="">
+                <h1 class="text-4xl font-extrabold mb-5 text-center">Socials</h1>
+                <div class="flex gap-5 items-center justify-center max-[530px]:gap-2">
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            class="main-grid-item-icon" fill="none">
+                            <path
+                                d="m17.543 13.398.661-4.31h-4.136V6.29c0-1.18.578-2.329 2.43-2.329h1.88V.291S16.673 0 15.042 0c-3.407 0-5.633 2.064-5.633 5.802v3.285H5.622v4.311h3.786v10.42a15.015 15.015 0 0 0 4.66 0v-10.42h3.475Z"
+                                fill="#1877F2" />
+                        </svg>
+                    </a>
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            class="main-grid-item-icon" fill="none">
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                fill="#333" />
+                        </svg>
+                    </a>
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <!-- https://feathericons.dev/?search=telegram&iconset=brands -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            class="main-grid-item-icon" fill="none">
+                            <path clip-rule="evenodd"
+                                d="M1.65 11.562c6.442-2.807 10.738-4.657 12.888-5.551C20.675 3.458 21.95 3.015 22.782 3c.182-.004.591.041.856.256.223.182.285.427.314.599.03.172.066.563.037.87-.332 3.494-1.771 11.974-2.503 15.888-.31 1.656-.92 2.211-1.51 2.266-1.284.118-2.259-.848-3.502-1.663-1.945-1.275-3.043-2.069-4.931-3.313-2.182-1.438-.768-2.228.476-3.52.325-.338 5.98-5.481 6.089-5.948.014-.058.026-.275-.103-.39-.13-.115-.32-.076-.457-.045-.196.045-3.303 2.099-9.322 6.162-.882.605-1.681.9-2.397.885-.789-.017-2.307-.446-3.435-.813-1.384-.45-2.484-.688-2.388-1.452.05-.398.598-.805 1.644-1.22Z"
+                                fill="url(#telegram__a)" fill-rule="evenodd" />
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="telegram__a" x1="12" x2="12" y1="3"
+                                    y2="22.742">
+                                    <stop stop-color="#2AABEE" />
+                                    <stop offset="1" stop-color="#229ED9" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <!-- https://feathericons.dev/?search=whatsapp&iconset=brands -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            class="main-grid-item-icon" fill="none">
+                            <path
+                                d="M6.579 8.121c.209-.663.778-1.457 1.19-1.66.183-.09.319-.11.763-.11.522 0 .548.005.684.14.088.095.328.606.673 1.432.292.71.533 1.315.533 1.347 0 .146-.293.61-.627 1.002-.23.267-.365.47-.365.543 0 .068.167.381.376.69.506.757 1.44 1.696 2.167 2.177.568.376 1.582.867 1.785.867.152 0 .429-.272.992-.982.23-.287.434-.495.512-.511.068-.021.235.005.37.057.392.152 2.371 1.117 2.476 1.211.203.188.037 1.264-.267 1.702-.464.68-1.79 1.259-2.663 1.17-.636-.068-2.14-.564-3.117-1.029-1.253-.6-2.574-1.697-3.644-3.038-.611-.763-1.227-1.692-1.493-2.246-.36-.751-.491-1.331-.455-2 .016-.287.068-.631.11-.762Z"
+                                fill="#25D366" />
+                            <path clip-rule="evenodd"
+                                d="M.606 9.5C1.582 4.491 5.576.76 10.709.06c.705-.1 2.684-.068 3.368.046.715.126 1.66.371 2.24.59 3.832 1.426 6.663 4.72 7.466 8.683.35 1.729.272 3.755-.203 5.457-1.133 4.03-4.423 7.205-8.511 8.218-2.663.658-5.462.37-7.983-.81l-.617-.292-3.226 1.029C1.473 23.545.01 23.994 0 23.983c-.01-.01.45-1.415 1.029-3.112l1.05-3.096-.424-.84C.48 14.569.12 12.01.605 9.498Zm21.172-.408c-1.028-3.76-4.297-6.626-8.145-7.148-2.099-.282-4.078.037-5.9.956-4.417 2.234-6.522 7.341-4.93 11.957.204.59.752 1.702 1.092 2.213l.271.408-.605 1.775a69.688 69.688 0 0 0-.606 1.817c0 .026.84-.224 1.864-.548a99.767 99.767 0 0 1 1.9-.596c.022 0 .225.11.45.24 2.428 1.447 5.456 1.76 8.187.852a9.927 9.927 0 0 0 6.48-6.945 9.998 9.998 0 0 0-.058-4.98Z"
+                                fill="#25D366" fill-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            class="main-grid-item-icon" fill="none">
+                            <path clip-rule="evenodd"
+                                d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"
+                                fill="url(#instagram__a)" fill-rule="evenodd" />
+                            <path d="M18.406 7.034a1.44 1.44 0 1 0 0-2.88 1.44 1.44 0 0 0 0 2.88Z"
+                                fill="url(#instagram__b)" />
+                            <path clip-rule="evenodd"
+                                d="M12 0C8.741 0 8.332.014 7.052.072 5.775.131 4.902.333 4.14.63a5.882 5.882 0 0 0-2.125 1.384A5.882 5.882 0 0 0 .63 4.14c-.297.763-.5 1.635-.558 2.912C.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.058 1.277.261 2.15.558 2.912.307.79.717 1.459 1.384 2.126A5.882 5.882 0 0 0 4.14 23.37c.764.297 1.636.5 2.913.558C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 1.277-.059 2.15-.261 2.912-.558a5.884 5.884 0 0 0 2.126-1.384 5.884 5.884 0 0 0 1.384-2.126c.297-.763.5-1.635.558-2.912.058-1.28.072-1.69.072-4.948 0-3.259-.014-3.668-.072-4.948-.059-1.277-.261-2.15-.558-2.912a5.882 5.882 0 0 0-1.384-2.126A5.883 5.883 0 0 0 19.86.63c-.763-.297-1.635-.5-2.912-.558C15.668.014 15.258 0 12 0Zm0 2.162c3.204 0 3.584.012 4.849.07 1.17.054 1.805.249 2.228.413.56.218.96.478 1.38.898.42.42.68.82.898 1.38.164.423.36 1.058.413 2.228.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.054 1.17-.249 1.805-.413 2.228a3.72 3.72 0 0 1-.898 1.38c-.42.42-.82.68-1.38.898-.423.164-1.058.36-2.228.413-1.265.058-1.645.07-4.849.07s-3.584-.012-4.85-.07c-1.169-.054-1.804-.249-2.227-.413a3.719 3.719 0 0 1-1.38-.898c-.42-.42-.68-.82-.898-1.38-.164-.423-.36-1.058-.413-2.228-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.85c.053-1.169.249-1.804.413-2.227.218-.56.478-.96.898-1.38.42-.42.82-.68 1.38-.898.423-.164 1.058-.36 2.228-.413 1.265-.058 1.645-.07 4.849-.07Z"
+                                fill="url(#instagram__c)" fill-rule="evenodd" />
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="instagram__a" x1="14.101" x2="7.087"
+                                    y1="-1.272" y2="21.899">
+                                    <stop stop-color="#515BD4" />
+                                    <stop offset=".26" stop-color="#9510B8" />
+                                    <stop offset=".66" stop-color="#E51804" />
+                                    <stop offset="1" stop-color="#FFBF00" />
+                                </linearGradient>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="instagram__b" x1="14.101" x2="7.087"
+                                    y1="-1.272" y2="21.899">
+                                    <stop stop-color="#515BD4" />
+                                    <stop offset=".26" stop-color="#9510B8" />
+                                    <stop offset=".66" stop-color="#E51804" />
+                                    <stop offset="1" stop-color="#FFBF00" />
+                                </linearGradient>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="instagram__c" x1="14.101" x2="7.087"
+                                    y1="-1.272" y2="21.899">
+                                    <stop stop-color="#515BD4" />
+                                    <stop offset=".26" stop-color="#9510B8" />
+                                    <stop offset=".66" stop-color="#E51804" />
+                                    <stop offset="1" stop-color="#FFBF00" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0 0 48 48">
+                            <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+                            <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+                            <polygon fill="#e53935"
+                                points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon>
+                            <path fill="#c62828"
+                                d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z">
+                            </path>
+                            <path fill="#fbc02d"
+                                d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="border shadow-md size-[50px] flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            class="main-grid-item-icon" fill="none">
+                            <path
+                                d="M5.372 24H.396V7.976h4.976V24ZM2.882 5.79C1.29 5.79 0 4.474 0 2.883a2.882 2.882 0 1 1 5.763 0c0 1.59-1.29 2.909-2.881 2.909ZM23.995 24H19.03v-7.8c0-1.86-.038-4.243-2.587-4.243-2.587 0-2.984 2.02-2.984 4.109V24H8.49V7.976h4.772v2.186h.07c.664-1.259 2.287-2.587 4.708-2.587 5.035 0 5.961 3.316 5.961 7.623V24h-.005Z"
+                                fill="#0A66C2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projectview" class="min-h-[95vh] pt-[4.5rem] px-1">
+        <div class="max-w-[1300px] w-full mx-auto">
+            <div class="mb-5 flex flex-col gap-2 py-4">
+                <h1 class="text-4xl font-extrabold text-center">Projects</h1>
+                <p class="text-center italic">that i built throughout my journey as a Developer.</p>
+            </div>
+
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-2 max-[615px]:place-items-center">
+                <div class="bg-gray-200 shadow-md max-w-[450px] w-full rounded-md">
+                    <img class="block h-[250px] aspect-1" src="./images/project1.PNG" alt="">
+
+                    <div class="p-4">
+                        <h1 class="text-center text-2xl mb-3 font-bold">Moment Keeper</h1>
+                        <p class="text-sm">A social media platform where you can share and preserve your happy moments, inspiring
+                            everyone by showcasing the beauty of life through personal experiences and joyful memories.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 shadow-md max-w-[450px] w-full rounded-md">
+                    <img class="block h-[250px] aspect-1" src="./images/project1.PNG" alt="">
+
+                    <div class="p-4">
+                        <h1 class="text-center text-2xl mb-3 font-bold">Moment Keeper</h1>
+                        <p class="text-sm">A social media platform where you can share and preserve your happy moments, inspiring
+                            everyone by showcasing the beauty of life through personal experiences and joyful memories.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 shadow-md max-w-[450px] w-full rounded-md">
+                    <img class="block h-[250px] aspect-1" src="./images/project1.PNG" alt="">
+
+                    <div class="p-4">
+                        <h1 class="text-center text-2xl mb-3 font-bold">Moment Keeper</h1>
+                        <p class="text-sm">A social media platform where you can share and preserve your happy moments, inspiring
+                            everyone by showcasing the beauty of life through personal experiences and joyful memories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        FOOTER
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
